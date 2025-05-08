@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <main class="main">
-      <ul class="main__list">
+    <main id="container" class="main">
+      <ul id="messages" class="main__list">
         <li class="main__msg main__msg-bot">
           <span>GTP</span>
           <p>Respuesta del bot</p>
@@ -26,13 +26,17 @@
       </ul>
     </main>
 
-    <form class="form">
-      <input class="form__msg-panel" placeholder="Escribe tu mensaje aquí..." />
-      <!-- <button class="form__btn">➤</button> -->
+    <form id="form" class="form">
+      <input
+        id="textUserArea"
+        class="form__msg-panel"
+        placeholder="Escribe tu mensaje aquí..."
+      />
+      <button id="button" class="form__btn">➤</button>
     </form>
 
-    <template class="msg-template">
-      <li class="msg-template__item">
+    <template id="template" class="template">
+      <li class="template__msg">
         <span></span>
         <p></p>
       </li>

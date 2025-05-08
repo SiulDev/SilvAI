@@ -4,8 +4,8 @@
   --main-bg-color: #f0f0f0;
   --user-bg-color: #6266e4e0;
   --bot-bg-color: #63dbd178;
-  /* --btn-bg-color: #2395f2d3;
-  --btn-hover-color: #2395f2af; */
+  --btn-bg-color: #2395f2d3;
+  --btn-hover-color: #2395f2af;
 }
 
 * {
@@ -126,6 +126,7 @@ h6 {
 
 .form {
   display: flex;
+  gap: 0.6rem;
 
   .form__msg-panel {
     padding: 0.3rem;
@@ -140,8 +141,8 @@ h6 {
     }
   }
 
-  /* .form__btn {
-    padding: 0.2rem 1rem;
+  .form__btn {
+    padding: 0.2rem 1.1rem;
     color: #ccc;
     background: var(--btn-bg-color);
     border: 0;
@@ -153,5 +154,5 @@ h6 {
       transform: scale(1.1);
       background: var(--btn-hover-color);
     }
-  } */
+  }
 }
