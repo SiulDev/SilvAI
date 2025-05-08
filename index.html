@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SilvAI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <ul class="main__list">
+        <li class="main__msg main__msg-bot">
+          <span>GTP</span>
+          <p>Respuesta del bot</p>
+        </li>
+        <li class="main__msg main__msg-user">
+          <span>Tú</span>
+          <p>Respuesta del usuario</p>
+        </li>
+      </ul>
+    </main>
+
+    <form class="form">
+      <input class="form__msg-panel" placeholder="Escribe tu mensaje aquí..." />
+      <!-- <button class="form__btn">➤</button> -->
+    </form>
+
+    <template class="msg-template">
+      <li class="msg-template__item">
+        <span></span>
+        <p></p>
+      </li>
+    </template>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
