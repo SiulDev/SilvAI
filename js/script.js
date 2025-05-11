@@ -12,6 +12,8 @@ FORM.addEventListener("submit", Event => {
   if (msgText !== "") {
     INPUT.value = ""
   }
+
+  addMessage(msgText, "user")
 })
 
 function addMessage(text, sender) {
@@ -22,6 +24,8 @@ function addMessage(text, sender) {
   const textParagraphs = newMessage.querySelector("p")
 
   textParagraphs.textContent = text
-  who.textContent = sender
+  who.textContent = sender === "main__msg-bot" ? "GPT" : "Tú"
   newMessage.classList.add(sender)
+
+  MESSAGES.appendChild(newMessage)
 }
