@@ -27,5 +27,7 @@ function addMessage(text, sender) {
   who.textContent = sender === "main__msg-bot" ? "GPT" : "Tú"
   newMessage.classList.add(sender)
 
+  CONTAINER.scrollTop = CONTAINER.scrollHeight
+
   MESSAGES.appendChild(newMessage)
 }
